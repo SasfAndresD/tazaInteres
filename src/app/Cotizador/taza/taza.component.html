@@ -1,0 +1,53 @@
+<div class="bord" id="divContainer">
+<h1 class="h1space border border-primary"id= "h1space">Cotizador de Ahorros</h1>
+<div class="divForm">
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Monto</span>
+    </div>
+    <input [(ngModel)] = "monto" type="number" class="form-control" style="text-align:right"  aria-describedby="emailHelp" placeholder="Monto">
+  </div>
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Plazo</span>
+    </div>
+    <input [(ngModel)] = "plazo" type="number"  class="form-control" placeholder="Plazo">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Taza de Interes</span>
+    </div>
+    <input [(ngModel)] = "taza"  type="text"  style="text-align:right"  class="form-control" >
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Periodo de Capitalización</span>
+    </div>
+    <input  type="text" class="form-control"  style="text-align:right" value="Diario" >
+  </div>
+
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Valor Rendimiento</span>
+    </div> 
+    <input readonly [(ngModel)] = "valRend" type="text" style="text-align:right" class="form-control">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Monto que recibira el cliente</span>
+    </div>
+    <input readonly [(ngModel)] = "montoRecib"  style="text-align:right" type="text" class="form-control" >
+  </div>
+  
+  
+  <button type="button" (click)="getTaza()" class="btnCalc btn btn-primary">Calcular</button>
+<br><br><br>
+  <p> (*) La tasa de interes varia de acuerdo al monto del capital de ahorros</p>
+  <p> (*) El calculo asume que el monto inicial será constante durante el periodo seleccionado</p>
+
+</div>
+</div>

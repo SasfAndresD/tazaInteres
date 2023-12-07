@@ -1,0 +1,30 @@
+.divForm{
+    width: 500px;
+    height: 500px;
+
+    align-items: center;
+    justify-content: center;  
+}
+
+.btnCalc{
+    margin: 10px;
+    float: right;
+    background-color: magenta;
+}
+
+.h1space{
+    background-color: magenta;
+    
+}
+.bord{
+    width: 550px;
+    height: 550px;
+    border:1px solid magenta;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
